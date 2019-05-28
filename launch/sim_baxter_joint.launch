@@ -1,0 +1,5 @@
+<launch>
+    <node pkg="moveit_ros_move_group" type="move_group" name="any_name" output="screen">
+      <remap from="joint_states" to="robot/joint_states"/>
+    </node>
+</launch>

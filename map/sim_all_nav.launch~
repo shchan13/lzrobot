@@ -1,0 +1,17 @@
+<launch>
+  <!-- Parameter -->
+  <arg name="map" value="$(find final)/map/md250.yaml"/>
+
+  <!-- Map Server -->
+  <include file="$(find final)/launch/map_server.launch">
+    <arg name="map" value="$(arg map)"/>
+  </include>
+  
+  <!-- AMCL -->
+  <include file="$(find final)/launch/amcl.launch"/>
+
+  <!-- Move Base -->
+  <include file="$(find final)/launch/move_base.launch"/>
+
+  <node name="rviz" pkg="rviz" type="rviz"/>
+</launch>
