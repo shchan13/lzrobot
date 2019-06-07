@@ -12,7 +12,7 @@
 
   <!-- for pioneer -->
   <node pkg="tf" type="static_transform_publisher" name="link1_broadcaster" args="-0.15 0 0.01 0 0 0 1 base_link laser 100" />
-  <node pkg="tf" type="static_transform_publisher" name="map_2_base" args="0 0 0 0 0 0 1 /odom /base_link 100"/>
+  <!--  <node pkg="tf" type="static_transform_publisher" name="map_2_base" args="0 0 0 0 0 0 1 /odom /base_link 100"/>-->
   
   <!-- for turtlebot -->
   <!-- node pkg="tf" type="static_transform_publisher" name="link1_broadcaster" args="0 0 0 0 0 0 1 base_footprint base_scan 100" / -->

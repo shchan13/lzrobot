@@ -7,8 +7,8 @@
   <arg name="odom_frame_id"   default="odom"/>
   
   <!--for pioneer-->
-  <arg name="base_frame_id"   default="/base_link"/>
-  <arg name="global_frame_id" default="/map"/>
+  <arg name="base_frame_id"   default="base_link"/>
+  <arg name="global_frame_id" default="map"/>
 
   <node pkg="amcl" type="amcl" name="amcl">
     <param name="use_map_topic"             value="$(arg use_map_topic)"/>
@@ -18,8 +18,8 @@
     <param name="gui_publish_rate"          value="10.0"/>
     <param name="laser_max_beams"             value="60"/>
     <param name="laser_max_range"           value="4.0"/>
-    <param name="min_particles"             value="500"/>
-    <param name="max_particles"             value="2000"/>
+    <param name="min_particles"             value="250"/>
+    <param name="max_particles"             value="1000"/>
     <param name="kld_err"                   value="0.05"/>
     <param name="kld_z"                     value="0.99"/>
     <param name="odom_alpha1"               value="0.2"/>
